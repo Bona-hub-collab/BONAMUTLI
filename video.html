@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Your videos </h1>
+            <nav>
+                <a href="index.html">home</a>
+                <a href="music.html">music</a>
+                <a href="videos.html" class="active">videos</a>
+                <a href="photos.html">photos</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>videos</h2>
+
+            <!-- Video Player -->
+            <video id="videoPlayer" controls style="width: 100%; max-height: 300px; display: none;">
+                <source src="" type="video/mp4">
+            </video>
+
+            <!-- Video List -->
+            <div class="list">
+                <div class="item" data-src="video1.mp4">
+                    <span>1.</span>
+                    <div>video 1</div>
+                    <button class="playVidBtn">▶</button>
+                </div>
+                <div class="item" data-src="video2.mp4">
+                    <span>2.</span>
+                    <div>video 2</div>
+                    <button class="playVidBtn">▶</button>
+                </div>
+                <div class="item" data-src="video3.mp4">
+                    <span>3.</span>
+                    <div>video 3</div>
+                    <button class="playVidBtn">▶</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="player-bar">
+            <span id="nowPlaying">not playing</span>
+            <div>
+                <button id="playPause">▶</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
