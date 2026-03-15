@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Your musics</h1>
+            <nav>
+                <a href="index.html">home</a>
+                <a href="music.html" class="active">music</a>
+                <a href="videos.html">videos</a>
+                <a href="photos.html">photos</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>music</h2>
+            
+            <!-- Hidden Audio Player -->
+            <audio id="audioPlayer"></audio>
+
+            <!-- Song List -->
+            <div class="list">
+                <div class="item" data-src="media/song1.mp3">
+                    <span>1.</span>
+                    <div>song 1</div>
+                    <button class="playBtn">▶</button>
+                </div>
+                <div class="item" data-src="media/song2.mp3">
+                    <span>2.</span>
+                    <div>song 2</div>
+                    <button class="playBtn">▶</button>
+                </div>
+                <div class="item" data-src="media/song3.mp3">
+                    <span>3.</span>
+                    <div>song 3</div>
+                    <button class="playBtn">▶</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="player-bar">
+            <span id="nowPlaying">not playing</span>
+            <div>
+                <button id="playPause">▶</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
